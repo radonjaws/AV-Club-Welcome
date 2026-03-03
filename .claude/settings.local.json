@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -l \"turnstyle\\\\|Turnstyle\" /Users/jw/Documents/dev/web/*/package.json)",
+      "Bash(npm install)",
+      "Bash(export PATH=\"$PATH:/usr/local/bin:/Users/jw/.nvm/versions/node/v22.15.0/bin\")",
+      "Bash(export PATH=\"$PATH:/usr/local/bin\")",
+      "Bash(npm show vue-katex versions --json)",
+      "Bash(npm show vue-katex@0.5.0 peerDependencies)",
+      "Bash(npm show @hsorby/vue3-katex versions --json)",
+      "Bash(npm show vue3-katex versions --json)",
+      "Bash(PATH=\"/Users/jw/.nvm/versions/node/v22.15.0/bin:$PATH\" npm run dev)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(lsof -ti :5173)",
+      "Bash(xargs kill -9)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(git -C /Users/jw/Documents/dev/AV-Club-Welcome status)",
+      "Bash(git init)",
+      "Bash(git add .)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
