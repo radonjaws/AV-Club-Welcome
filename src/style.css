@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #app {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-screen-bg text-gray-100 font-mono;
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-panel-bg;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-panel-border rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 rounded bg-signal-green text-black font-bold text-sm
+           hover:brightness-110 active:brightness-90 transition-all;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 rounded border border-panel-border text-gray-300 text-sm
+           hover:bg-panel-hover transition-colors;
+  }
+
+  /* KaTeX display override */
+  .katex-display {
+    @apply overflow-x-auto py-2;
+  }
+}
