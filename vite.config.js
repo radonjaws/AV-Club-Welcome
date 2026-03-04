@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
+  base: '/AV-Club-Welcome/',
   plugins: [vue()],
   resolve: {
     alias: {
